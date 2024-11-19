@@ -47,5 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
             indicator.classList.toggle('active', index + 1 === step);
         });
     }
+
     
 });
