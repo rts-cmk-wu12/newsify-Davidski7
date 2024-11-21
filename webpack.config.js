@@ -5,7 +5,8 @@ module.exports = {
     entry: {
         bundle: "./src/index.js",
         auth: "./src/auth.js",
-        home: "./src/home.js"
+        home: "./src/home.js",
+        archive: "./src/archive.js"
 
 
     },
@@ -61,8 +62,12 @@ module.exports = {
         template: './src/home.html',
         filename: 'home.html',
         chunks: ["home"]
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/archive.html',
+        filename: 'archive.html',
+        chunks: ["archive"]
     })
- 
    
      
   ]
