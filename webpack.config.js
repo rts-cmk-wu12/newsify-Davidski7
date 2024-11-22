@@ -67,7 +67,13 @@ module.exports = {
         template: './src/archive.html',
         filename: 'archive.html',
         chunks: ["archive"]
+    }),
+    new HtmlWebpackPlugin({
+        template: './src/settings.html',
+        filename: 'settings.html',
+        chunks: ["settings"]
     })
+   
    
      
   ]
