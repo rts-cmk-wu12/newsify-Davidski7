@@ -17,6 +17,12 @@ header {
         font-size: 24px;
         font-weight: bold;
         color: #333;
+        display: flex;
+    }
+
+    .logo img{
+        width: 19px;
+        height: 26.98;
     }
 
     .search-bar {
@@ -32,18 +38,16 @@ main {
 
     .category-section {
         margin-bottom: 20px;
-        background: #fff;
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+       
 
         .category-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            background-color: #f9f9f9;
-            border-bottom: 1px solid #ddd;
+          
+            
 
             h2 {
                 font-size: 18px;
