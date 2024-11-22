@@ -20,7 +20,6 @@ async function fetchNews(category) {
     }
 }
 
-
 function toggleCategory(event) {
     const categorySection = event.currentTarget.closest(".category-section");
     const newsList = categorySection.querySelector(".news-list");
