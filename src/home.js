@@ -3,7 +3,7 @@ require('../style/main-home.scss');
 const API_URL = "https://api.nytimes.com/svc/topstories/v2/";
 const API_KEY = "BPr1RsV6kGYlgT7Asq5GJodrZtkFbKUV";
 
-// Funktion til at hente nyheder fra API
+
 async function fetchNews(category) {
     try {
         const response = await fetch(`${API_URL}${category}.json?api-key=${API_KEY}`);
@@ -20,7 +20,7 @@ async function fetchNews(category) {
     }
 }
 
-// Funktion til at åbne/lukke nyhedskategorier
+
 function toggleCategory(event) {
     const categorySection = event.currentTarget.closest(".category-section");
     const newsList = categorySection.querySelector(".news-list");
@@ -39,7 +39,7 @@ function toggleCategory(event) {
     }
 }
 
-// Swipe-funktion til nyhedsartikler
+
 function addSwipeFeature(newsItem) {
     let startX = 0;
     let currentX = 0;
@@ -70,36 +70,34 @@ function addSwipeFeature(newsItem) {
     });
 }
 
-// Arkivér en nyhedsartikel
+
 function archiveNews(newsItem) {
     const title = newsItem.querySelector("a").textContent;
     const url = newsItem.querySelector("a").href;
     const archivedNews = { title, url };
 
-    // Hent tidligere arkiverede nyheder fra localStorage
     let archivedItems = JSON.parse(localStorage.getItem("archivedNews")) || [];
 
-    // Tilføj den nye nyhed til listen
+    
     archivedItems.push(archivedNews);
 
-    // Gem den opdaterede liste i localStorage
     localStorage.setItem("archivedNews", JSON.stringify(archivedItems));
 
-    // Fjern nyheden visuelt fra listen
+    
     newsItem.style.transform = "translateX(-100%)"; 
     setTimeout(() => {
         newsItem.remove();
     }, 300);
 }
 
-// Render en nyhedskategori
+
 function renderCategory(categoryName, newsList) {
     const mainElement = document.querySelector("main");
 
     const categorySection = document.createElement("section");
     categorySection.className = "category-section";
 
-    // Tilføjet logo foran kategorinavnet
+    
     categorySection.innerHTML = `
         <div class="category-header">
             <img src="images/newsify_logo1.png" alt="Newsify Logo">
@@ -129,7 +127,6 @@ function renderCategory(categoryName, newsList) {
     mainElement.appendChild(categorySection);
 }
 
-// Hovedfunktion for at hente og vise nyheder
 async function main() {
     const categories = ["arts", "movies", "sports"];
     const categoryNames = { arts: "Arts", movies: "Movies", sports: "Sports" };

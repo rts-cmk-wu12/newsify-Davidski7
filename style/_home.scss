@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Sidens baggrundsfarve */
+    background-color: #f4f4f4; 
 }
 
 header {
@@ -21,7 +21,7 @@ header {
     }
 
     .logo img {
-        width: 19px; /* Størrelsen af logo */
+        width: 19px; 
         height: 26.98px;
     }
 
@@ -48,26 +48,26 @@ main {
         .category-header {
             display: flex;
             align-items: center;
-            padding: 10px 0; /* Ingen baggrund, kun padding for tekstafstand */
-            border-top: 1px solid #ddd; /* Streg over */
-            border-bottom: 1px solid #ddd; /* Streg under */
+            padding: 10px 0; 
+            border-top: 1px solid #ddd; 
+            border-bottom: 1px solid #ddd; 
 
             h2 {
                 font-size: 18px;
                 margin: 0;
-                color: #333; /* Tekstfarve */
+                color: #333; 
                 display: flex;
                 align-items: center;
 
                 img {
-                    width: 19px; /* Samme størrelse som logo i header */
+                    width: 19px;
                     height: 26.98px;
-                    margin-right: 5px; /* Mindre afstand mellem logo og tekst */
+                    margin-right: 5px; 
                 }
             }
 
-            .toggle-button {
-                margin-left: auto; /* Skub pilen helt til højre */
+            .toggle-button { 
+                margin-left: auto; 
                 background: none;
                 border: none;
                 font-size: 18px;
@@ -83,13 +83,13 @@ main {
         .news-list {
             list-style: none;
             margin: 0;
-            padding: 0; /* Fjern padding for bedre kontrol */
+            padding: 0; 
 
             .news-item {
-                padding: 10px 0; /* Kun lodret padding */
-                border-bottom: 1px solid #ddd; /* Streg under hver nyhed */
-                background: none; /* Fjern baggrundsfarve */
-                color: #333; /* Ensartet farve */
+                padding: 10px 0; 
+                border-bottom: 1px solid #ddd;
+                background: none; 
+                color: #333; 
 
                 a {
                     text-decoration: none;
@@ -102,7 +102,7 @@ main {
                 }
 
                 &:last-child {
-                    border-bottom: none; /* Fjern stregen under den sidste nyhed */
+                    border-bottom: none; 
                 }
             }
         }
