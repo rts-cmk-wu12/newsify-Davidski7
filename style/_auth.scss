@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-container {
+    text-align: center;
+  }
+  
+  .auth-logo img {
+    height: 128px;
+    width: 88px;
+    margin-bottom: 10px;
+
+  }
+  
+  .auth-logo h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .auth-container p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .auth-buttons button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #facebook-auth {
+    border-radius: 25px;
+    background-color: white;
+    width: 345px;
+    height: 62px;
+  }
+  
+  #google-auth {
+    border-radius: 25px;
+    background-color: white;
+    width: 345px;
+    height: 62px;
+  }
+  
+  .password-auth {
+    background-color: #4caf50;
+    color: white;
+    width: 345px;
+    height: 62px;
+    border-radius: 25px;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    color: #888;
+  }
+  
+  .divider span {
+    background: white;
+    padding: 0 10px;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: #ccc;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  

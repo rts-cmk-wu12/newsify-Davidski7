@@ -1,0 +1,46 @@
+.onboarding-screen {
+    display: none; // Skjules som standard
+    text-align: center;
+    padding: 20px;
+}
+
+.onboarding-screen.active {
+    display: block; // Kun den aktive onboarding-skærm vises
+}
+
+.onboarding-image {
+    width: 393px;
+    height: 392px;
+}
+
+.onboarding-button, .onboarding-skip-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.onboarding-button{
+    background-color: #4caf50;
+    color: white;
+    width: 166px;
+    height: 62px;
+    border-radius: 25px;
+}
+
+.onboarding-skip-button {
+    background-color: transparent;
+    border: none;
+    color: #555;
+}
+
+.onboarding-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+}
