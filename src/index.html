@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsify</title>
+    <link rel="stylesheet" href="bundle.css"> 
+</head>
+<body>
+
+    <div id="splash-screen" class="splash">
+        <img src="images/newsify_logo1.png" alt="Newsify Logo" class="splash-image">
+        <div id="splash-text" class="splash-text">
+            <h1>Velkommen til Newsify</h1>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <h2>Hovedindhold</h2>
+        <p>Dette er hovedindholdet, som vises efter splash-skærmen.</p>
+    </div>
+
+    <div id="onboarding-container" style="display: none;">
+        
+        <div id="onboarding-1" class="onboarding-screen active">
+            <img src="images/Onboarding2.png" alt="Onboarding Image 1" class="onboarding-image">
+            <h2>Stay Connected, Everywhere, Anytime</h2>
+            <p>Welcome to Newsify, your ultimate destination for breaking news, exclusive stories, and tailored content.</p>
+            <button class="onboarding-skip-button" onclick="goToAuthPage()">Skip</button>
+            <button class="onboarding-button" onclick="nextOnboarding(1)">Continue</button>
+        </div>
+
+        <div id="onboarding-2" class="onboarding-screen">
+            <img src="images/Onboarding3.png" alt="Onboarding Image 2" class="onboarding-image">
+            <h2>Become a Savvy Global Citizen.</h2>
+            <p>Discover tailored news that aligns with your interests and preferences. Your personalized news journey awaits!</p>
+            <button class="onboarding-skip-button" onclick="goToAuthPage()">Skip</button>
+            <button class="onboarding-button" onclick="nextOnboarding(2)">Continue</button>
+        </div>
+
+        <div id="onboarding-3" class="onboarding-screen">
+            <img src="images/Onboarding4.png" alt="Onboarding Image 3" class="onboarding-image">
+            <h2>Enhance your News Journey Now!</h2>
+            <p>Be part of our dynamic community and contribute your insights and participate in enriching conversations.</p>
+            <button class="onboarding-skip-button" onclick="goToAuthPage()">Skip</button>
+            <button class="onboarding-button" onclick="goToAuthPage()">Finish</button>
+        </div>
+
+        <div class="onboarding-indicators">
+            <span class="indicator" id="indicator-1"></span>
+            <span class="indicator" id="indicator-2"></span>
+            <span class="indicator" id="indicator-3"></span>
+        </div>
+    </div>
+
+   
+    <script src="bundle.js"></script>
+    <script>
+        function goToAuthPage() {
+            
+            window.location.href = 'auth.html';
+        }
+    </script>
+
+</body>
+</html>
